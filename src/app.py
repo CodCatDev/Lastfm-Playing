@@ -1,9 +1,15 @@
 import flask as fl
 import flask_cors as cors
+import config
+
+if config.API_KEY == "YOUR_API_KEY":
+    print("Place your LASTFM Api key in config.py!")
+    exit(1)
 
 app = fl.Flask(
     __name__
 )
+cors.CORS(app=app)
 app.json.sort_keys = False # type: ignore
 app.json.ensure_ascii = False # type: ignore
 

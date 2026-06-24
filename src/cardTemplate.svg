@@ -1,0 +1,24 @@
+<svg width="700" height="300" viewBox="0 0 700 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Маска, которая делает углы Base64-картинки скругленными (rx="20") -->
+    <clipPath id="cover-clip">
+      <rect x="22" y="117" width="150" height="150" rx="20" />
+    </clipPath>
+  </defs>
+
+  <!-- Основной фон виджета -->
+  <rect width="700" height="300" rx="40" fill="#121212"/>
+  <text fill="#FF5050" style="white-space: pre" xml:space="preserve" font-family="Segoe UI" font-size="40" letter-spacing="0em"><tspan x="32" y="63.0625">Last.fm</tspan></text>
+  <text fill="white" style="white-space: pre" xml:space="preserve" font-family="Segoe UI" font-size="32" letter-spacing="0em"><tspan x="549" y="54.75">Recently</tspan></text>
+  
+  <!-- Нижняя подложка -->
+  <rect y="84" width="700" height="216" rx="40" fill="black"/>
+  
+  <!-- Картинка обложки в Base64 (вставляется в атрибут href) -->
+  <image x="22" y="117" width="150" height="150" clip-path="url(#cover-clip)" preserveAspectRatio="xMidYMid slice" href="{b64Image}" />
+
+  <!-- Текстовые переменные для шаблонизатора -->
+  <text fill="white" style="white-space: pre" xml:space="preserve" font-family="Segoe UI" font-size="48" letter-spacing="0em"><tspan x="191" y="168.875">{title}</tspan></text>
+  <text fill="#A4A4A4" style="white-space: pre" xml:space="preserve" font-family="Segoe UI" font-size="24" letter-spacing="0em"><tspan x="191" y="200.938">by {artist} | {album}</tspan></text>
+  <text fill="white" style="white-space: pre" xml:space="preserve" font-family="Segoe UI" font-size="24" letter-spacing="0em"><tspan x="191" y="260.938">{status}</tspan></text>
+</svg>

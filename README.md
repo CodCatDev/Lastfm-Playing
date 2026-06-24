@@ -7,4 +7,7 @@
     <img alt="Stargazers" src="https://img.shields.io/github/stars/CodCatDev/lastfm-playing?style=for-the-badge&logo=github&color=f4dbd6&logoColor=D9E0EE&labelColor=302D41"></a>
     <a href="https://github.com/CodCatDev/lastfm-playing/releases/latest">
     <img alt="Releases" src="https://img.shields.io/github/release/CodCatDev/lastfm-playing.svg?style=for-the-badge&logo=semantic-release&color=f5bde6&logoColor=D9E0EE&labelColor=302D41"/></a>
+    <h2><a href="DOCS.md">Documentation (Usage, Self-Hosting)</a></h2>
+    <h2>Template</h2>
+    <img alt="card" src="https://api.codcatdev.site/lastfmPlaying/?user=codcatdev">
 </div>
