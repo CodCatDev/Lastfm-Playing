@@ -8,6 +8,7 @@ cors.CORS(app=bp)
 @bp.get('/')
 async def card():
     user = fl.request.args.get('user', default='NONE')
+    test = fl.request.args.get('test', default='NONE')
     if user == "NONE":
         return {
         "code": 400,
@@ -44,4 +45,8 @@ async def card():
         status=statusText,
         b64Image=b64,
     )
-    return fl.Response(cardSvg, mimetype="image/svg+xml")
+    response = fl.Response(cardSvg, mimetype="image/svg+xml")
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    return response

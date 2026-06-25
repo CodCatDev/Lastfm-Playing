@@ -9,5 +9,5 @@
     <img alt="Releases" src="https://img.shields.io/github/release/CodCatDev/lastfm-playing.svg?style=for-the-badge&logo=semantic-release&color=f5bde6&logoColor=D9E0EE&labelColor=302D41"/></a>
     <h2><a href="DOCS.md">Documentation (Usage, Self-Hosting)</a></h2>
     <h2>Template</h2>
-    <img alt="card" src="https://api.codcatdev.site/lastfmPlaying/?user=codcatdev">
+    <img alt="card" src="https://api.codcatdev.site/lastfmPlaying/?user=codcatdev&test=1">
 </div>
