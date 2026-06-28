@@ -44,6 +44,7 @@ async def card():
         album=track["album"],
         status=statusText,
         b64Image=b64,
+        user=user.upper()
     )
     response = fl.Response(cardSvg, mimetype="image/svg+xml")
     response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
